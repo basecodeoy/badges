@@ -7,7 +7,7 @@ namespace Tests\Unit;
 use Illuminate\Foundation\Auth\User;
 use PreemStudio\Badges\Concerns\HasBadges;
 
-class ClassThatHasBadges extends User
+final class ClassThatHasBadges extends User
 {
     use HasBadges;
 

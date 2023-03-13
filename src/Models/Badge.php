@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Config;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
-class Badge extends Model
+final class Badge extends Model
 {
     use HasSlug;
 
@@ -27,6 +27,6 @@ class Badge extends Model
 
     public function getTable(): string
     {
-        return Config::get('laravel-badges.tables.badges');
+        return Config::get('laravel-badgeable.tables.badges');
     }
 }

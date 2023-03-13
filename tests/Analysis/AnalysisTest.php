@@ -4,20 +4,14 @@ declare(strict_types=1);
 
 namespace Tests\Analysis;
 
-use GrahamCampbell\Analyzer\AnalysisTrait;
-use PHPUnit\Framework\TestCase;
+use PreemStudio\Jetpack\Tests\AbstractAnalysisTestCase;
 
-/**
- * @coversNothing
- */
-class AnalysisTest extends TestCase
+final class AnalysisTest extends AbstractAnalysisTestCase
 {
-    use AnalysisTrait;
-
     public static function getPaths(): array
     {
         return [
-            realpath(__DIR__.'/../../src'),
+            realpath(__DIR__.'/../src'),
             realpath(__DIR__),
         ];
     }

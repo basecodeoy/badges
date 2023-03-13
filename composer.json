@@ -1,11 +1,11 @@
 {
-    "name": "preemstudio/laravel-badges",
+    "name": "preemstudio/laravel-badgeable",
     "description": "A package to easily use badges with Laravel.",
     "license": "MIT",
     "keywords": [
         "PreemStudio",
         "laravel",
-        "laravel-badges"
+        "laravel-badgeable"
     ],
     "authors": [
         {
@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/preemstudio/laravel-badges",
+    "homepage": "https://github.com/preemstudio/laravel-badgeable",
     "require": {
         "php": "^8.1",
         "illuminate/contracts": "^10.0",

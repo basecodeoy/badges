@@ -12,9 +12,9 @@ trait HasBadges
     public function badges(): MorphToMany
     {
         return $this->morphToMany(
-            Config::get('laravel-badges.models.badge'),
+            Config::get('laravel-badgeable.models.badge'),
             'model',
-            Config::get('laravel-badges.tables.model_has_badges')
+            Config::get('laravel-badgeable.tables.model_has_badges')
         );
     }
 }

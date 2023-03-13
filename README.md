@@ -1,9 +1,9 @@
 # Laravel Badges
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/preemstudio/laravel-badges.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-badges)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-badges/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/preemstudio/laravel-badges/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-badges/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/preemstudio/laravel-badges/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/preemstudio/laravel-badges.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-badges)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/preemstudio/laravel-badgeable.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-badgeable)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-badgeable/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/preemstudio/laravel-badgeable/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/preemstudio/laravel-badgeable/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/preemstudio/laravel-badgeable/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/preemstudio/laravel-badgeable.svg?style=flat-square)](https://packagist.org/packages/preemstudio/laravel-badgeable)
 
 A package to easily use badges with Laravel.
 
@@ -17,20 +17,20 @@ A package to easily use badges with Laravel.
 You can install the package via composer:
 
 ```bash
-composer require preemstudio/laravel-badges
+composer require preemstudio/laravel-badgeable
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-badges-migrations"
+php artisan vendor:publish --tag="laravel-badgeable-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-badges-config"
+php artisan vendor:publish --tag="laravel-badgeable-config"
 ```
 
 ## Usage
