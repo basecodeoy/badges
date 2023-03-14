@@ -7,7 +7,7 @@ namespace Tests\Unit\Concerns;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Collection;
-use Tests\Unit\ClassThatHasBadges;
+use Tests\Fixtures\ClassThatHasBadges;
 
 uses(RefreshDatabase::class);
 

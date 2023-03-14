@@ -11,7 +11,7 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create(Config::get('laravel-badgeable.tables.badges'), function (Blueprint $table) {
+        Schema::create(Config::get('badgeable.tables.badges'), function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('slug');
             $table->string('name');
@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Schema::create(Config::get('laravel-badgeable.tables.model_has_badges'), function (Blueprint $table) {
+        Schema::create(Config::get('badgeable.tables.model_has_badges'), function (Blueprint $table) {
             $table->unsignedBigInteger('badge_id');
             $table->morphs('model');
         });
@@ -27,7 +27,7 @@ return new class extends Migration
 
     public function down()
     {
-        Schema::drop(Config::get('laravel-badgeable.tables.model_has_badges'));
-        Schema::drop(Config::get('laravel-badgeable.tables.badges'));
+        Schema::drop(Config::get('badgeable.tables.model_has_badges'));
+        Schema::drop(Config::get('badgeable.tables.badges'));
     }
 };

@@ -27,6 +27,6 @@ final class Badge extends Model
 
     public function getTable(): string
     {
-        return Config::get('laravel-badgeable.tables.badges');
+        return Config::get('badgeable.tables.badges');
     }
 }

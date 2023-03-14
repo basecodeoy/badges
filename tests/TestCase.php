@@ -6,9 +6,9 @@ namespace Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\WithFaker;
-use Orchestra\Testbench\TestCase as Orchestra;
+use PreemStudio\Jetpack\TestBench\AbstractPackageTestCase;
 
-abstract class TestCase extends Orchestra
+abstract class TestCase extends AbstractPackageTestCase
 {
     use WithFaker;
 
@@ -44,8 +44,8 @@ abstract class TestCase extends Orchestra
         });
     }
 
-    protected function getPackageProviders($app): array
+    protected function getServiceProviderClass(): string
     {
-        return [\PreemStudio\Badges\ServiceProvider::class];
+        return \PreemStudio\Badges\ServiceProvider::class;
     }
 }
