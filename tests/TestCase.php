@@ -8,6 +8,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\WithFaker;
 use PreemStudio\Jetpack\TestBench\AbstractPackageTestCase;
 
+/**
+ * @internal
+ */
 abstract class TestCase extends AbstractPackageTestCase
 {
     use WithFaker;
@@ -17,12 +20,12 @@ abstract class TestCase extends AbstractPackageTestCase
         $app['config']->set('database.default', 'testbench');
 
         $app['config']->set('database.connections.testbench', [
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => ':memory:',
-            'prefix'   => '',
+            'prefix' => '',
         ]);
 
-        $app['db']->connection()->getSchemaBuilder()->create('users', function (Blueprint $table) {
+        $app['db']->connection()->getSchemaBuilder()->create('users', function (Blueprint $table): void {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
@@ -30,7 +33,7 @@ abstract class TestCase extends AbstractPackageTestCase
             $table->timestamps();
         });
 
-        $app['db']->connection()->getSchemaBuilder()->create('badges', function (Blueprint $table) {
+        $app['db']->connection()->getSchemaBuilder()->create('badges', function (Blueprint $table): void {
             $table->bigIncrements('id');
             $table->string('slug');
             $table->string('name');
@@ -38,7 +41,7 @@ abstract class TestCase extends AbstractPackageTestCase
             $table->timestamps();
         });
 
-        $app['db']->connection()->getSchemaBuilder()->create('model_has_badges', function (Blueprint $table) {
+        $app['db']->connection()->getSchemaBuilder()->create('model_has_badges', function (Blueprint $table): void {
             $table->unsignedBigInteger('badge_id');
             $table->morphs('model');
         });

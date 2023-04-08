@@ -13,13 +13,13 @@ uses(RefreshDatabase::class);
 
 it('should morph to a badgeable', function (): void {
     $user = ClassThatHasBadges::create([
-        'name'     => 'John Doe',
-        'email'    => 'john@doe.com',
+        'name' => 'John Doe',
+        'email' => 'john@doe.com',
         'password' => 'password',
     ]);
 
     $user->badges()->create([
-        'name'        => $this->faker->firstName,
+        'name' => $this->faker->firstName,
         'description' => $this->faker->paragraph,
     ]);
 

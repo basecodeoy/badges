@@ -17,7 +17,7 @@ final class Badge extends Model
 
     public static function findByslug(string $slug): self
     {
-        return static::where('slug', $slug)->firstOrFail();
+        return self::where('slug', $slug)->firstOrFail();
     }
 
     public function getSlugOptions(): SlugOptions

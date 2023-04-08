@@ -14,7 +14,7 @@ trait HasBadges
         return $this->morphToMany(
             Config::get('badgeable.models.badge'),
             'model',
-            Config::get('badgeable.tables.model_has_badges')
+            Config::get('badgeable.tables.model_has_badges'),
         );
     }
 }
