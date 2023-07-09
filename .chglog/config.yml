@@ -2,7 +2,7 @@ style: github
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: https://github.com/BombenProdukt/laravel-badgeable
+  repository_url: https://github.com/faustbrian/laravel-badgeable
 options:
   commits:
     filters:
