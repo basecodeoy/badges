@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/laravel-badgeable",
+    "homepage": "https://github.com/faustbrian/laravel-badgeable",
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
