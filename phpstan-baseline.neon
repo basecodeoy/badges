@@ -1,0 +1,11 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method BombenProdukt\\\\Badges\\\\Models\\\\Badge\\:\\:getTable\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Models/Badge.php
+
+		-
+			message: "#^Property 'slug' does not exist in BombenProdukt\\\\Badges\\\\Models\\\\Badge model\\.$#"
+			count: 1
+			path: src/Models/Badge.php
