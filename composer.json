@@ -1,0 +1,63 @@
+{
+    "name": "basecodeoy/badges",
+    "description": "A package to easily use badges with Laravel.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "badges"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/badges",
+    "support": {
+        "issues": "https://github.com/basecodeoy/badges/issues",
+        "source": "https://github.com/basecodeoy/badges",
+        "security": "https://github.com/basecodeoy/badges/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "basecodeoy/crate": "^1.0.0",
+        "illuminate/contracts": "^11.0",
+        "illuminate/database": "^11.0",
+        "spatie/laravel-sluggable": "^3.6"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\Badges\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BaseCodeOy\\Badges\\ServiceProvider"
+            ]
+        }
+    }
+}

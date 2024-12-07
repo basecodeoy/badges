@@ -1,0 +1,15 @@
+{
+    "symbol-whitelist": [
+        "array",
+        "bool",
+        "false",
+        "int",
+        "null",
+        "self",
+        "string",
+        "true",
+        "Illuminate\\Database\\Eloquent\\Model",
+        "Illuminate\\Database\\Eloquent\\Relations\\MorphToMany",
+        "Illuminate\\Support\\Facades\\Config"
+    ]
+}
